@@ -29,8 +29,6 @@ public class MainActivity
 	private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
-    private CharSequence mDrawerTitle;
-    private CharSequence mTitle;
   
     private String[] navMenuTitles;
     
@@ -56,7 +54,7 @@ public class MainActivity
 	    
 	    navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
 	    
-	    mTitle = mDrawerTitle = getTitle();
+	    //mTitle = mDrawerTitle = getTitle();
 	    
 	    mDrawerList.setAdapter(new ArrayAdapter<String>(this,
         		android.R.layout.simple_list_item_activated_1, navMenuTitles));

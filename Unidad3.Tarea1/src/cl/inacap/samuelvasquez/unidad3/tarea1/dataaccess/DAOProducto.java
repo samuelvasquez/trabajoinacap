@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
-import cl.inacap.samuelvasquez.unidad3.tarea1.datamodel.Cliente;
 import cl.inacap.samuelvasquez.unidad3.tarea1.datamodel.Producto;
 
 public class DAOProducto {
