@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <EditText
+            android:id="@+id/etxt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nombre_cliente"
+            android:nextFocusDown="@+id/etxt_direccion"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etxt_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_nombre"
+            android:hint="@string/direccion_cliente"
+            android:nextFocusDown="@+id/etxt_telefono"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etxt_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_direccion"
+            android:hint="@string/telefono_cliente"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

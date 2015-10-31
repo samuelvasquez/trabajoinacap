@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Productos Frescos</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="str_login_usuario">Nombre Usuario:</string>
+    <string name="str_login_password">Contraseña:</string>
+    <string name="str_login_ingresar">Ingresar</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Cerrar</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Administración de clientes</item>
+        <item>Entrega de pedidos</item>
+        <item>Listar productos</item>
+        <item>Resumen de caja</item>
+    </string-array>
+
+    <string name="title_fragment_clientes">Administracion de Clientes</string>
+    <string name="title_fragment_pedidos">Entrega de pedidos</string>
+    <string name="title_fragment_productos">Listar productos</string>
+    <string name="title_fragment_resumen">Resumen de caja</string>
+    
+    
+    <string name="fragment_productos_empty">Sin productos</string>
+    <string name="fragment_clientes_empty">Sin clientes</string>
+    
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="add_cliente">Agregar Cliente</string>
+    <string name="update_cliente">Modificar Cliente</string>
+    <string name="delete_cliente">Eliminar Cliente</string>
+    
+    <string name="nombre_cliente">Nombre</string>
+    <string name="direccion_cliente">Direccion</string>
+    <string name="telefono_cliente">Telefono</string>
+    
+    <string name="add_producto">Agregar Producto</string>
+    <string name="update_producto">Modificar Producto</string>
+    
+    <string name="add_pedido">Agregar Pedido</string>
+    <string name="update_pedido">Modificar Pedido</string>
+    <string name="delete_pedido">Eliminar Pedido</string>
+    
+    <string name="str_pedido_cliente">Cliente</string>
+    <string name="str_pedido_fecha">Fecha de Entrega</string>
+    <string name="str_pedido_entregado">Entregado</string>
+   <string name="str_pedido_add_detalle">Agregar Detalle</string>
+   <string name="str_pedido_detalles">Detalles</string>
+   <string name="str_pedido_producto">Producto</string>
+   <string name="str_pedido_cantidad">Cantidad</string>
+   <string name="str_pedido_precio">Precio Unit.</string>
+   <string name="str_pedido_total">Total</string>
+  
+	<string name="update">Modificar</string>
+    <string name="add">Agregar</string>
+    <string name="reset">Limpiar</string>
+    <string name="cancel">Cancelar</string>
+
+</resources>

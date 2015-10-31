@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="cl.inacap.samuelvasquez.unidad3.tarea1.actividades.ResumenFragment" >
+
+   <TextView
+        android:id="@+id/lbl_titulo_total_entregas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:text="Total Entregas" />
+   
+   <TextView
+        android:id="@+id/lbl_valor_total_entregas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+         android:textStyle="bold"
+         android:gravity="right"
+        android:text="" />
+   
+   <TextView
+        android:id="@+id/lbl_titulo_total_pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:text="Total Pedidos" />
+   
+   <TextView
+        android:id="@+id/lbl_valor_total_pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+         android:textStyle="bold"
+         android:gravity="right"
+       android:text="" />
+   
+   <TextView
+        android:id="@+id/lbl_titulo_saldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:text="Saldo" />
+   
+   <TextView
+        android:id="@+id/lbl_valor_saldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:textStyle="bold"
+         android:gravity="right"
+        android:text="" />
+
+</LinearLayout>
