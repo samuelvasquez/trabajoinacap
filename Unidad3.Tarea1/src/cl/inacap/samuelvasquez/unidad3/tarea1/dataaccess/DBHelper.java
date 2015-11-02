@@ -42,12 +42,12 @@ public class DBHelper extends SQLiteOpenHelper {
 			+ "ES_ACTIVO INTEGER DEFAULT 1);";
    
    private static final String DB_INSERT_CLIENTE_1 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(1, 1, 'Cliente 1', 'Direccion 1', '111111111', 1);";
-   private static final String DB_INSERT_CLIENTE_2 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(2, 1, 'Cliente 1', 'Direccion 1', '111111111', 1);";
-   private static final String DB_INSERT_CLIENTE_3 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(3, 1, 'Cliente 2', 'Direccion 2', '222222222', 1);";
-   private static final String DB_INSERT_CLIENTE_4 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(4, 1, 'Cliente 3', 'Direccion 3', '333333333', 1);";
-   private static final String DB_INSERT_CLIENTE_5 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(5, 2, 'Cliente 4', 'Direccion 4', '444444444', 1);";
-   private static final String DB_INSERT_CLIENTE_6 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(6, 2, 'Cliente 5', 'Direccion 5', '555555555', 1);";
-   private static final String DB_INSERT_CLIENTE_7 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(7, 2, 'Cliente 6', 'Direccion 6', '666666666', 1);";
+   private static final String DB_INSERT_CLIENTE_2 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(2, 1, 'Cliente 2', 'Direccion 2', '222222222', 1);";
+   private static final String DB_INSERT_CLIENTE_3 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(3, 1, 'Cliente 3', 'Direccion 3', '333333333', 1);";
+   private static final String DB_INSERT_CLIENTE_4 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(4, 1, 'Cliente 4', 'Direccion 4', '444444444', 1);";
+   private static final String DB_INSERT_CLIENTE_5 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(5, 2, 'Cliente 5', 'Direccion 5', '555555555', 1);";
+   private static final String DB_INSERT_CLIENTE_6 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(6, 2, 'Cliente 6', 'Direccion 6', '666666666', 1);";
+   private static final String DB_INSERT_CLIENTE_7 = "INSERT INTO CLIENTE(ID, ID_VENDEDOR, NOMBRE, DIRECCION, TELEFONO, ES_ACTIVO) VALUES(7, 2, 'Cliente 7', 'Direccion 7', '777777777', 1);";
    				
    private static final String DB_CREATE_PEDIDO = "CREATE TABLE PEDIDO "
 	   		+ "(ID INTEGER PRIMARY KEY, "
@@ -73,12 +73,12 @@ public class DBHelper extends SQLiteOpenHelper {
            instance = new DBHelper(context);
        return instance;
    }
-   
+      
    public DBHelper(Context context)
    {
       super(context, name, factory, version);
    }
- 
+   
    @Override
    public void onOpen(SQLiteDatabase db) {
        super.onOpen(db);

@@ -49,6 +49,11 @@ public class DAOPedido {
     }
 	
 	public long update(Pedido pedido) {
+		// Valido que el pedido exista
+		Pedido _pedido = getPedido(pedido.id);
+		if(_pedido == null)
+			throw new NullPointerException("No se encuentra informacion de pedido");
+			
         ContentValues values = new ContentValues();
         values.put("ID_CLIENTE", pedido.id_cliente);
         values.put("FECHA_ENTREGA", formatter.format(pedido.fecha_entrega));
@@ -97,6 +102,11 @@ public class DAOPedido {
     }
 	
 	public long delete(Pedido pedido) {
+		// Valido que el pedido exista
+		Pedido _pedido = getPedido(pedido.id);
+		if(_pedido == null)
+			throw new NullPointerException("No se encuentra informacion de pedido");
+	
 		ContentValues values = new ContentValues();
         values.put("ES_ACTIVO", "0");
      
@@ -173,7 +183,7 @@ public class DAOPedido {
 		return pedidos;
 	}
 	
-	public Pedido getPedido(long id) {
+	public Pedido getPedido(int id) {
         Pedido pedido = null;
  
         String where = "ES_ACTIVO = 1 AND ID = ? "; // the condition for the row(s) you want returned.

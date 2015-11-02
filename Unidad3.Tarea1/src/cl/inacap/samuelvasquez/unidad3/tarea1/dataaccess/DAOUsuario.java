@@ -2,6 +2,7 @@ package cl.inacap.samuelvasquez.unidad3.tarea1.dataaccess;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -79,7 +80,7 @@ public class DAOUsuario {
 	}
 	
 	public Usuario GetUsuario(String login) {
-		List<Usuario> listaUsuarios = getAllUsuarios();
+		List<Usuario>  listaUsuarios = getAllUsuarios();
 		 
 		for (Usuario _usuario : listaUsuarios) {
            if(_usuario.login.equals(login)){
@@ -88,4 +89,20 @@ public class DAOUsuario {
 		}
 		return null;
 	}
+	
+	public Usuario GetUsuario(int id) {
+        Usuario usuario = null;
+ 
+        String where = "ES_ACTIVO = 1 AND ID = ? "; // the condition for the row(s) you want returned.
+		String[] whereArgs = new String[] { // The value of the column specified above for the rows to be included in the response
+				String.valueOf(id)
+		    };
+		Cursor cursor = database.query("USUARIO", columnas, where, whereArgs, null, null, null);
+		
+        if (cursor.moveToNext()) {
+        	usuario = cursorToUsuario(cursor);
+	    }
+        
+        return usuario;
+    }
 }
